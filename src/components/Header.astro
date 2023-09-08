@@ -7,14 +7,14 @@ import logoPNG from "/assets/logo.png";
 import logoSVG from "/assets/logo.svg";
 
 export interface Props {
-  activeNav?: "posts" | "tags" | "about" | "search";
+  activeNav?: "posts" | "tags" | "sobre" | "busca";
 }
 
 const { activeNav } = Astro.props;
 ---
 
 <header>
-  <a id="skip-to-content" href="#main-content">Skip to content</a>
+  <a id="skip-to-content" href="#main-content">Ir para o conteúdo</a>
   <div class="nav-container">
     <div class="top-nav-wrap">
       <a href="/" class="logo">
@@ -22,7 +22,7 @@ const { activeNav } = Astro.props;
           LOGO_IMAGE.enable ? (
             <img
               src={LOGO_IMAGE.svg ? logoSVG : logoPNG}
-              alt="AstroPaper Logo"
+              alt="stokey Logo"
               width={LOGO_IMAGE.width}
               height={LOGO_IMAGE.height}
             />
@@ -34,7 +34,7 @@ const { activeNav } = Astro.props;
       <nav id="nav-menu">
         <button
           class="hamburger-menu focus-outline"
-          aria-label="Open Menu"
+          aria-label="Abrir Menu"
           aria-expanded="false"
           aria-controls="menu-items"
         >
@@ -69,18 +69,18 @@ const { activeNav } = Astro.props;
             </a>
           </li>
           <li>
-            <a href="/about" class={activeNav === "about" ? "active" : ""}>
-              About
+            <a href="/sobre" class={activeNav === "sobre" ? "active" : ""}>
+              Sobre
             </a>
           </li>
           <li>
             <LinkButton
-              href="/search"
+              href="/busca"
               className={`focus-outline p-3 sm:p-1 ${
-                activeNav === "search" ? "active" : ""
+                activeNav === "busca" ? "active" : ""
               }`}
-              ariaLabel="search"
-              title="Search"
+              ariaLabel="busca"
+              title="Busca"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
