@@ -31,7 +31,9 @@ const socialImageURL = new URL(
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="canonical" href={canonicalURL} />
     <meta name="generator" content={Astro.generator} />
 
@@ -76,6 +78,20 @@ const socialImageURL = new URL(
     }
 
     <script is:inline src="/toggle-theme.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      type="text/partytown"
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-FDBLR22MWE"></script>
+    <script type="text/partytown">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-FDBLR22MWE");
+    </script>
   </head>
   <body>
     <slot />
