@@ -17,6 +17,14 @@ Seguindo a ideia da busca pela primeira falha decidi fazer um estudo sobre as to
 
 Vamos entender neste post o que é XSS e como ele funciona.
 
+## Vídeo sobre o que é XSS
+
+<iframe width="100%" height="415"
+src="https://www.youtube.com/embed/JCG0JNVDRTg"
+frameborder="0"
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen></iframe>
+
 ## Table of contents
 
 ## O que significa a sigla XSS?
